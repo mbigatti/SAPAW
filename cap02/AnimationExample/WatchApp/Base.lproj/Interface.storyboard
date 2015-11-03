@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8092"/>
+    </dependencies>
+    <scenes>
+        <!--Main Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="MainInterfaceController" customModule="WatchApp_Extension">
+                    <items>
+                        <table alignment="left" id="buB-s7-evF">
+                            <items>
+                                <tableRow identifier="RowController" id="TV6-ft-EQS" customClass="RowController" customModule="WatchApp_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="2nG-MA-rFj">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Label" numberOfLines="0" id="5k1-kf-mgm"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="label" destination="5k1-kf-mgm" id="NSO-z2-fJJ"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="buB-s7-evF" id="c5s-lb-h0I"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="236" y="475.5"/>
+        </scene>
+        <!--Scompare-->
+        <scene sceneID="mQg-vG-doc">
+            <objects>
+                <controller identifier="Scompare" hidesWhenLoading="NO" id="wHn-o7-jwI" customClass="HeartDisappearInterfaceController" customModule="WatchApp_Extension">
+                    <items>
+                        <imageView alignment="center" verticalAlignment="center" image="Heart" id="Pas-ww-GYE"/>
+                    </items>
+                    <connections>
+                        <outlet property="image" destination="Pas-ww-GYE" id="mmK-gx-pVx"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="468" y="476"/>
+        </scene>
+        <!--Riposizionamento-->
+        <scene sceneID="5hA-z0-Qef">
+            <objects>
+                <controller identifier="Riposizionamento" hidesWhenLoading="NO" id="Nrr-jS-KCw" customClass="HeartRelocationInterfaceController" customModule="WatchApp_Extension">
+                    <items>
+                        <imageView width="64" height="64" alignment="center" image="Heart" id="MRS-TP-iYx"/>
+                        <group width="1" alignment="left" verticalAlignment="bottom" id="4eb-Oi-76g">
+                            <items>
+                                <button width="0.5" alignment="left" verticalAlignment="bottom" title="△" id="eF8-Ec-ZSU">
+                                    <connections>
+                                        <action selector="upButtonTapped:" destination="Nrr-jS-KCw" id="bbY-wo-Ocm"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" alignment="right" verticalAlignment="bottom" title="▽" id="MVg-c1-EAr">
+                                    <connections>
+                                        <action selector="downButtonTapped:" destination="Nrr-jS-KCw" id="I3e-iI-ucb"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="image" destination="MRS-TP-iYx" id="34g-su-zZh"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="672" y="475.5"/>
+        </scene>
+        <!--Pulsa-->
+        <scene sceneID="Hgm-kR-gtb">
+            <objects>
+                <controller identifier="Pulsa" hidesWhenLoading="NO" id="e5f-my-ZVi" customClass="HeartPulseInterfaceController" customModule="WatchApp_Extension">
+                    <items>
+                        <imageView width="100" height="100" alignment="center" verticalAlignment="center" image="Heart" id="hfG-Ts-nG8"/>
+                    </items>
+                    <connections>
+                        <outlet property="image" destination="hfG-Ts-nG8" id="rNx-ar-e3y"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="468" y="760.5"/>
+        </scene>
+        <!--Visualizzazione in sequenza-->
+        <scene sceneID="Qbu-pq-omx">
+            <objects>
+                <controller identifier="Visualizzazione in sequenza" hidesWhenLoading="NO" id="bte-z4-cZR" customClass="ProgressiveDisplayInterfaceController" customModule="WatchApp_Extension">
+                    <items>
+                        <group width="128" alignment="center" verticalAlignment="center" spacing="0.0" id="Tqr-sb-Yz7">
+                            <items>
+                                <button width="2" height="2" alignment="left" verticalAlignment="center" backgroundImage="Heart" id="0qg-S9-Q9A">
+                                    <color key="backgroundColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </button>
+                                <button width="2" height="2" alignment="left" verticalAlignment="center" backgroundImage="Heart" id="mHB-Gw-Kuu">
+                                    <color key="backgroundColor" red="0.98431372549999996" green="0.16862745100000001" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </button>
+                                <button width="2" height="2" alignment="left" verticalAlignment="center" backgroundImage="Heart" id="iex-wA-zH6">
+                                    <color key="backgroundColor" red="0.7725490196" green="0.2666666667" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                </button>
+                                <button width="2" height="2" alignment="left" verticalAlignment="center" backgroundImage="Heart" id="Hfc-2m-jPL">
+                                    <color key="backgroundColor" red="1" green="0.35686274509999999" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="starButton1" destination="0qg-S9-Q9A" id="zxs-di-8jH"/>
+                        <outlet property="starButton2" destination="mHB-Gw-Kuu" id="uC1-LI-YDT"/>
+                        <outlet property="starButton3" destination="iex-wA-zH6" id="k1q-DE-kXa"/>
+                        <outlet property="starButton4" destination="Hfc-2m-jPL" id="2az-Z6-zFX"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="672" y="760.5"/>
+        </scene>
+        <!--Appare-->
+        <scene sceneID="3H2-aU-XHG">
+            <objects>
+                <controller identifier="Appare" hidesWhenLoading="NO" id="qf3-dd-nhX" customClass="HeartAppearInterfaceController" customModule="WatchApp_Extension">
+                    <items>
+                        <imageView alignment="center" verticalAlignment="center" alpha="0.0" image="Heart" id="7KN-e6-fNY"/>
+                    </items>
+                    <connections>
+                        <outlet property="image" destination="7KN-e6-fNY" id="SiW-Rl-rfR"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="467" y="190"/>
+        </scene>
+        <!--Blocco completamento-->
+        <scene sceneID="JYG-LX-HSq">
+            <objects>
+                <controller identifier="Blocco completamento" hidesWhenLoading="NO" id="GWR-7u-EPo" customClass="AnimationCompletionInterfaceController" customModule="WatchApp_Extension">
+                    <items>
+                        <imageView alignment="center" verticalAlignment="center" image="Heart" id="gK0-WO-veX"/>
+                    </items>
+                    <connections>
+                        <outlet property="image" destination="gK0-WO-veX" id="moB-Ze-WoL"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="672" y="189.5"/>
+        </scene>
+        <!--Animazione gruppo-->
+        <scene sceneID="1Qr-rl-3Mw">
+            <objects>
+                <controller identifier="Animazione gruppo" hidesWhenLoading="NO" id="dWM-ur-VKB" customClass="GroupAnimationInterfaceController" customModule="WatchApp_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="ZXi-d0-9KU">
+                            <items>
+                                <group width="36" height="36" alignment="left" radius="18" id="yz3-qm-isz">
+                                    <items>
+                                        <imageView width="0.69999999999999996" height="0.69999999999999996" alignment="center" verticalAlignment="center" image="Heart" id="PQG-Ur-AQH">
+                                            <color key="tintColor" red="0.97951275110000002" green="0.950658381" blue="0.94812232259999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        </imageView>
+                                    </items>
+                                    <color key="backgroundColor" red="0.98431372549999996" green="0.16862745100000001" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </group>
+                                <group width="1" alignment="left" id="Gf7-a4-7Cb"/>
+                                <label alignment="left" verticalAlignment="center" text="Asso di cuori" id="BUg-de-arf"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="spacerGroup" destination="Gf7-a4-7Cb" id="EbY-aa-jFe"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="898" y="189.5"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+</document>

@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8092"/>
+    </dependencies>
+    <scenes>
+        <!--Main-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller title="Main" id="AgC-eL-Hgc" customClass="MainInterfaceController" customModule="WatchApp_Extension">
+                    <items>
+                        <table alignment="left" id="68P-xc-GtB">
+                            <items>
+                                <tableRow identifier="RowController" id="hLQ-yG-PI8" customClass="RowController" customModule="WatchApp_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="Okj-OK-jtB">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="KGv-sM-7Xf"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="label" destination="KGv-sM-7Xf" id="v1K-ug-pbw"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="68P-xc-GtB" id="B2J-64-gZ3"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="180" y="755.5"/>
+        </scene>
+        <!--Button-->
+        <scene sceneID="cCy-DO-Yc5">
+            <objects>
+                <controller identifier="Button" hidesWhenLoading="NO" id="pja-Ye-vxU">
+                    <items>
+                        <button width="1" alignment="left" title="Pulsante" id="54q-su-fwI"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="492" y="219"/>
+        </scene>
+        <!--ListPicker-->
+        <scene sceneID="Wy7-d9-iS6">
+            <objects>
+                <controller identifier="ListPicker" hidesWhenLoading="NO" id="mAj-9n-980" customClass="ListPickerInterfaceController" customModule="WatchApp_Extension">
+                    <items>
+                        <picker width="1" height="100" alignment="left" focusStyle="sequence" id="7Tc-DG-iqz"/>
+                    </items>
+                    <connections>
+                        <outlet property="picker" destination="7Tc-DG-iqz" id="H6p-qM-de5"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="958" y="218"/>
+        </scene>
+        <!--StackPicker-->
+        <scene sceneID="xc2-p7-pYO">
+            <objects>
+                <controller identifier="StackPicker" hidesWhenLoading="NO" id="Gq0-7U-Wyj" customClass="StackPickerInterfaceController" customModule="WatchApp_Extension">
+                    <items>
+                        <picker width="1" height="100" alignment="left" style="stack" id="s6i-0m-UMP"/>
+                    </items>
+                    <connections>
+                        <outlet property="picker" destination="s6i-0m-UMP" id="Jjc-aU-A0s"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="958" y="487"/>
+        </scene>
+        <!--Label-->
+        <scene sceneID="UM6-NR-GzV">
+            <objects>
+                <controller identifier="Label" hidesWhenLoading="NO" id="nNZ-vK-GDQ">
+                    <items>
+                        <label alignment="left" text="Etichetta di testo" id="JlX-qz-pRz"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="492" y="486"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="qme-jA-l2O">
+            <objects>
+                <controller identifier="Map" hidesWhenLoading="NO" id="bqY-2J-YL2" customClass="MapInterfaceController" customModule="WatchApp_Extension">
+                    <items>
+                        <map height="100" alignment="left" id="Ox8-vB-UrL"/>
+                    </items>
+                    <connections>
+                        <outlet property="map" destination="Ox8-vB-UrL" id="cvz-YU-MK3"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1196" y="486"/>
+        </scene>
+        <!--Dictation-->
+        <scene sceneID="8da-Qg-1qb">
+            <objects>
+                <controller identifier="Dictation" hidesWhenLoading="NO" id="Kng-QY-mfw"/>
+            </objects>
+            <point key="canvasLocation" x="1429" y="485.5"/>
+        </scene>
+        <!--Movie-->
+        <scene sceneID="1Zg-aH-wda">
+            <objects>
+                <controller identifier="Movie" hidesWhenLoading="NO" id="RcW-EU-1Fj" customClass="MovieInterfaceController" customModule="WatchApp_Extension">
+                    <items>
+                        <movie width="1" height="100" alignment="left" posterImage="Poster-1" id="gCC-Ad-bj4"/>
+                    </items>
+                    <connections>
+                        <outlet property="movie" destination="gCC-Ad-bj4" id="Gjn-Aa-QWu"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1196" y="219"/>
+        </scene>
+        <!--Separator-->
+        <scene sceneID="bYg-HA-HDR">
+            <objects>
+                <controller identifier="Separator" hidesWhenLoading="NO" id="7E3-Gc-2pZ">
+                    <items>
+                        <separator alignment="left" id="XuV-WO-8NZ"/>
+                        <separator alignment="left" id="ppx-dP-n2j">
+                            <color key="color" red="0.12549019610000001" green="0.58039215690000001" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </separator>
+                        <separator alignment="left" id="Ykt-HQ-4e6">
+                            <color key="color" red="1" green="0.35686274509999999" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                        </separator>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1196" y="1017"/>
+        </scene>
+        <!--Slider-->
+        <scene sceneID="rD2-5D-SpI">
+            <objects>
+                <controller identifier="Slider" hidesWhenLoading="NO" id="e8I-ln-gsr">
+                    <items>
+                        <slider width="1" alignment="left" value="1" maximum="3" steps="3" id="nLq-ks-Vbx"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="719" y="219"/>
+        </scene>
+        <!--SequencePicker-->
+        <scene sceneID="gfy-52-3a9">
+            <objects>
+                <controller identifier="SequencePicker" hidesWhenLoading="NO" id="7tz-83-bzh" customClass="SequencePickerInterfaceController" customModule="WatchApp_Extension">
+                    <items>
+                        <picker width="1" height="100" alignment="left" style="sequence" indicatorMode="shownWhileFocused" id="WQh-qy-Bjo"/>
+                    </items>
+                    <connections>
+                        <outlet property="picker" destination="WQh-qy-Bjo" id="kiA-6f-xJP"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="958" y="756"/>
+        </scene>
+        <!--Group-->
+        <scene sceneID="8T0-vM-UiX">
+            <objects>
+                <controller identifier="Group" hidesWhenLoading="NO" id="S3D-up-yPI">
+                    <items>
+                        <group width="1" alignment="left" id="18R-OG-goK">
+                            <items>
+                                <button width="0.5" alignment="left" title="Sinistra" id="Pj5-p7-gkc"/>
+                                <button width="0.5" alignment="left" title="Destra" id="bgp-B8-uTN"/>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1196" y="756"/>
+        </scene>
+        <!--ActivityIndicator-->
+        <scene sceneID="i3x-J5-7mI">
+            <objects>
+                <controller identifier="ActivityIndicator" hidesWhenLoading="NO" id="YmG-Xw-PnM" customClass="ActivityIndicatorInterfaceController" customModule="WatchApp_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="wZp-og-ARR">
+                            <items>
+                                <imageView alignment="center" image="Activity" animationDuration="1" id="pgO-0y-4Ou"/>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="20" bottom="0.0"/>
+                        </group>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Avvia" id="HPM-jd-kfJ">
+                            <connections>
+                                <action selector="startStopButtonTapped" destination="YmG-Xw-PnM" id="E93-hQ-LtO"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="button" destination="HPM-jd-kfJ" id="j60-Au-Iks"/>
+                        <outlet property="image" destination="pgO-0y-4Ou" id="9ge-9c-2fQ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="719" y="1017.5"/>
+        </scene>
+        <!--CoordinatedImagePicker-->
+        <scene sceneID="9dj-V8-XfS">
+            <objects>
+                <controller identifier="CoordinatedImagePicker" hidesWhenLoading="NO" id="nHe-Uu-lWe" customClass="CoordinatedImagesPickerInterfaceController" customModule="WatchApp_Extension">
+                    <items>
+                        <group width="100" height="100" alignment="center" verticalAlignment="center" backgroundImage="progress-15" id="C0Y-cl-3Ph">
+                            <items>
+                                <picker width="50" height="50" alignment="center" verticalAlignment="center" focusStyle="stack" id="sb4-lq-4Fd"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="group" destination="C0Y-cl-3Ph" id="Plj-0P-Bsx"/>
+                        <outlet property="picker" destination="sb4-lq-4Fd" id="dR0-34-dRx"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="958" y="1017"/>
+        </scene>
+        <!--Menu-->
+        <scene sceneID="naH-cM-rP5">
+            <objects>
+                <controller identifier="Menu" hidesWhenLoading="NO" id="RLl-E9-yOP" customClass="MenuInterfaceController" customModule="WatchApp_Extension">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="Premi sullo schermo per far apparire il menu." textAlignment="center" numberOfLines="0" id="dne-nK-Qff"/>
+                    </items>
+                    <menu key="menu" id="9dn-9G-v3j">
+                        <items>
+                            <menuItem title="Aggiungi" icon="add" id="gqg-Ii-ujX"/>
+                            <menuItem title="Rimuovi" icon="trash" id="tVI-ad-of6"/>
+                            <menuItem title="Gift 1" image="present-menu-item" id="q89-MT-N7H"/>
+                        </items>
+                    </menu>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1429" y="1018"/>
+        </scene>
+        <!--Alert-->
+        <scene sceneID="wLk-Wl-w1w">
+            <objects>
+                <controller identifier="Alert" hidesWhenLoading="NO" id="5Xd-YF-eCk" customClass="AlertInterfaceController" customModule="WatchApp_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="Alert" id="bqa-kY-S9x">
+                            <connections>
+                                <action selector="alertButtonTapped" destination="5Xd-YF-eCk" id="BMC-Ix-ZDA"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Side by side" id="GIH-IC-2qF">
+                            <connections>
+                                <action selector="sideBySideButtonTapped" destination="5Xd-YF-eCk" id="BYo-vp-OC2"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="ActionSheet" id="034-gv-yGc">
+                            <connections>
+                                <action selector="actionSheetButtonTapped" destination="5Xd-YF-eCk" id="Rfd-ag-ZmA"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1643" y="487"/>
+        </scene>
+        <!--Modal-->
+        <scene sceneID="A8X-Gm-U7N">
+            <objects>
+                <controller identifier="Modal" hidesWhenLoading="NO" id="xAG-f3-eJa">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="Pagina Modale" numberOfLines="0" id="bOd-5A-gUi">
+                            <fontDescription key="font" type="system" weight="semibold" pointSize="26"/>
+                        </label>
+                    </items>
+                    <color key="backgroundColor" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1643" y="218"/>
+        </scene>
+        <!--Input-->
+        <scene sceneID="lda-8k-13u">
+            <objects>
+                <controller identifier="Input" hidesWhenLoading="NO" id="UtP-ha-cSt" customClass="InputViewController" customModule="WatchApp_Extension">
+                    <items>
+                        <label alignment="left" numberOfLines="0" id="Azc-Xd-sEk"/>
+                        <imageView alignment="center" hidden="YES" id="kJA-Mv-IOt"/>
+                        <button width="1" alignment="left" hidden="YES" title="Ancora" id="vKw-Ie-NlM">
+                            <connections>
+                                <action selector="moreButtonTapped" destination="UtP-ha-cSt" id="25P-Cp-IB3"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="button" destination="vKw-Ie-NlM" id="hWO-tG-2J0"/>
+                        <outlet property="image" destination="kJA-Mv-IOt" id="GJF-cC-GGh"/>
+                        <outlet property="label" destination="Azc-Xd-sEk" id="hhv-6U-Lf1"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1429" y="218.5"/>
+        </scene>
+        <!--Image-->
+        <scene sceneID="JXz-lu-HjL">
+            <objects>
+                <controller identifier="Image" hidesWhenLoading="NO" id="LEA-j8-eRW">
+                    <items>
+                        <imageView alignment="left" image="Sample-Image-2" contentMode="bottom" id="CoM-8e-sBx"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="719" y="756.5"/>
+        </scene>
+        <!--Date-->
+        <scene sceneID="KeN-Wc-qrn">
+            <objects>
+                <controller identifier="Date" hidesWhenLoading="NO" id="2y7-6q-CRT">
+                    <items>
+                        <dateLabel alignment="left" id="rUZ-Vt-wsH">
+                            <dateFormatterStyle key="dateStyle" short="YES"/>
+                            <dateFormatterStyle key="timeStyle" short="YES"/>
+                        </dateLabel>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="492" y="756"/>
+        </scene>
+        <!--Timer-->
+        <scene sceneID="b4r-bg-aND">
+            <objects>
+                <controller identifier="Timer" hidesWhenLoading="NO" id="bJZ-JO-vYo">
+                    <items>
+                        <timer alignment="left" id="4QC-CY-ko3"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="492" y="1018"/>
+        </scene>
+        <!--Haptic-->
+        <scene sceneID="K9c-zC-usc">
+            <objects>
+                <controller identifier="Haptic" hidesWhenLoading="NO" id="dwI-O9-3Wd" customClass="HapticInterfaceControlle" customModule="WatchApp_Extension">
+                    <items>
+                        <picker width="1" height="100" alignment="left" id="XkT-AK-RUW">
+                            <connections>
+                                <action selector="pickerAction:" destination="dwI-O9-3Wd" id="xdA-lm-hSh"/>
+                            </connections>
+                        </picker>
+                        <button width="1" alignment="left" title="Esegui" id="BrZ-X9-DTS">
+                            <connections>
+                                <action selector="playHapticButtonTapped" destination="dwI-O9-3Wd" id="iNK-Xl-4Oc"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="picker" destination="XkT-AK-RUW" id="WFG-TC-cEu"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1429" y="756.5"/>
+        </scene>
+        <!--Switch-->
+        <scene sceneID="D0K-j3-UHO">
+            <objects>
+                <controller identifier="Switch" hidesWhenLoading="NO" id="tcX-Q7-y1g">
+                    <items>
+                        <switch width="1" alignment="left" value="YES" title="Switch" id="0dY-kZ-ALF"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="719" y="486"/>
+        </scene>
+    </scenes>
+</document>
