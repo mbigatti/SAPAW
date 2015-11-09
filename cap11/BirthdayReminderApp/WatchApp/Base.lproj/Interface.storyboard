@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="y1M-mX-DJ4">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8092"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="MS1-Oz-bOl">
+            <objects>
+                <controller hidesWhenLoading="NO" id="y1M-mX-DJ4" customClass="InterfaceController" customModule="WatchApp_Extension">
+                    <items>
+                        <group width="1" height="10" alignment="left" id="4ek-9e-bia"/>
+                        <label alignment="left" text="Caricamento in corso..." numberOfLines="0" id="jxP-pU-mf4"/>
+                    </items>
+                    <connections>
+                        <outlet property="label" destination="jxP-pU-mf4" id="3cx-BM-Woo"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-246" y="-55"/>
+        </scene>
+        <!--ContactController-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="ContactController" id="AgC-eL-Hgc" customClass="ContactInterfaceController" customModule="WatchApp_Extension">
+                    <items>
+                        <table alignment="left" id="HaL-0o-VUh">
+                            <items>
+                                <tableRow identifier="ContactSummary" id="cLn-bb-UZd" customClass="ContactSummaryRowController" customModule="WatchApp_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="vmK-mr-TBt">
+                                        <items>
+                                            <group width="64" height="64" alignment="center" radius="32" id="lGa-18-Nmp">
+                                                <items>
+                                                    <imageView width="1" height="1" alignment="left" id="cfB-mV-jTN"/>
+                                                </items>
+                                            </group>
+                                            <group width="1" alignment="center" layout="vertical" spacing="0.0" id="7pE-hp-Q6z">
+                                                <items>
+                                                    <label alignment="center" text="Label" id="PXy-aU-2im">
+                                                        <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                                    </label>
+                                                    <label alignment="center" text="Label" id="DSe-o5-sPC">
+                                                        <color key="textColor" red="0.77647058823529413" green="0.42352941176470588" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                                    </label>
+                                                    <label alignment="center" text="Label" textAlignment="center" id="KuF-gf-oUp">
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                                    </label>
+                                                </items>
+                                                <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="6"/>
+                                            </group>
+                                        </items>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="ageLabel" destination="DSe-o5-sPC" id="IbA-yh-Lb2"/>
+                                        <outlet property="birthdayLabel" destination="KuF-gf-oUp" id="9e5-Zh-6S8"/>
+                                        <outlet property="image" destination="cfB-mV-jTN" id="Erg-9X-pQm"/>
+                                        <outlet property="nameLabel" destination="PXy-aU-2im" id="hF4-Zg-6FS"/>
+                                    </connections>
+                                </tableRow>
+                                <tableRow identifier="ContactDetail" id="JTo-tv-rlp" customClass="ContactDetailRowController" customModule="WatchApp_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" spacing="0.0" id="Rnh-c3-7pG">
+                                        <items>
+                                            <label alignment="left" text="Label" id="zjT-cI-BL9"/>
+                                            <label alignment="left" text="Label" id="qbO-vW-ooh">
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="descriptionLabel" destination="qbO-vW-ooh" id="rjS-nr-EFu"/>
+                                        <outlet property="valueLabel" destination="zjT-cI-BL9" id="InC-vd-I63"/>
+                                    </connections>
+                                </tableRow>
+                                <tableRow identifier="ContactMap" id="1tt-hc-nsF" customClass="ContactMapRowController" customModule="WatchApp_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="Qlt-7m-BpQ">
+                                        <items>
+                                            <map height="100" alignment="left" id="ul5-wI-Sar"/>
+                                        </items>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="map" destination="ul5-wI-Sar" id="MZ9-0q-onN"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="HaL-0o-VUh" id="pas-q5-JKo"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-42" y="5.5"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="rjY-Ar-IMT">
+            <objects>
+                <glanceController spacing="0.0" topTemplateType="mediumBody1" id="Sv0-Ai-Zie" customClass="GlanceController" customModule="WatchApp" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="1234" id="7sB-o9-1i6"/>
+                        <label alignment="left" text="Label" id="PNq-CQ-Yds">
+                            <color key="textColor" red="0.77647058820000003" green="0.42352941179999998" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <group alignment="left" id="eew-Gs-W6Y">
+                            <items>
+                                <group width="100" height="100" alignment="center" verticalAlignment="center" radius="50" id="tfc-vD-RcZ">
+                                    <items>
+                                        <imageView width="1" height="1" alignment="center" verticalAlignment="center" id="zDb-x8-bkm"/>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                    <connections>
+                        <outlet property="birthdayLabel" destination="PNq-CQ-Yds" id="YGh-U9-a2h"/>
+                        <outlet property="image" destination="zDb-x8-bkm" id="B2K-6M-hM6"/>
+                        <outlet property="nameLabel" destination="7sB-o9-1i6" id="9jC-hm-kae"/>
+                    </connections>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="-246" y="308"/>
+        </scene>
+    </scenes>
+</document>

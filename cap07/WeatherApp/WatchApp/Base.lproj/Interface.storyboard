@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8092"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchApp" customModuleProvider="target">
+                    <items>
+                        <imageView width="40" height="40" alignment="left" id="Ekp-4C-H3o">
+                            <color key="tintColor" red="0.12549019610000001" green="0.58039215690000001" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </imageView>
+                        <label alignment="left" text="Label" id="sMA-Jk-edA">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <label alignment="left" text="Label" id="tEH-6n-fBE">
+                            <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                        </label>
+                        <label alignment="left" text="Label" id="cZ1-1d-dqO">
+                            <fontDescription key="font" type="system" weight="thin" pointSize="48"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="conditionLabel" destination="tEH-6n-fBE" id="Zac-vw-n2m"/>
+                        <outlet property="image" destination="Ekp-4C-H3o" id="dea-Vm-2pW"/>
+                        <outlet property="locationLabel" destination="sMA-Jk-edA" id="yYV-aA-pso"/>
+                        <outlet property="temperatureLabel" destination="cZ1-1d-dqO" id="dDZ-pa-aS1"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="83" y="149"/>
+        </scene>
+    </scenes>
+</document>

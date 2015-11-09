@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rig-5Y-ilp">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8092"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="t2N-dE-KJi">
+            <objects>
+                <controller hidesWhenLoading="NO" id="rig-5Y-ilp" customClass="InterfaceController" customModule="WatchApp_Extension">
+                    <items>
+                        <table alignment="left" id="wFu-nG-wMV">
+                            <items>
+                                <tableRow identifier="VideoRowController" id="lvz-c9-ZHZ" customClass="VideoRowController" customModule="WatchApp_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="AOd-Nn-chg">
+                                        <items>
+                                            <imageView width="28" height="28" alignment="left" verticalAlignment="center" contentMode="scaleAspectFill" id="RFG-LE-xPx"/>
+                                            <group width="5" alignment="left" id="TXc-ri-eX4"/>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="aTw-ha-k33"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="image" destination="RFG-LE-xPx" id="wdd-zk-5vD"/>
+                                        <outlet property="label" destination="aTw-ha-k33" id="fx0-tw-prR"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="wFu-nG-wMV" id="zzj-de-ma9"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="244" y="136"/>
+        </scene>
+    </scenes>
+</document>

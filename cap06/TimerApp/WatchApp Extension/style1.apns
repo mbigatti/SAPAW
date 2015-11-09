@@ -1,0 +1,16 @@
+{
+    "aps": {
+        "alert": {
+            "body": "Tempo scaduto",
+        },
+        "category": "style1"
+    },
+    
+    "WatchKit Simulator Actions": [
+        {
+            "title": "First Button",
+            "identifier": "firstButtonAction"
+        }
+    ],
+    
+}

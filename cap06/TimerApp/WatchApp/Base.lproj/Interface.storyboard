@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8092"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchApp" customModuleProvider="target">
+                    <items>
+                        <group width="100" height="100" alignment="center" backgroundImage="progress-3" layout="vertical" id="88Q-Y4-ouX">
+                            <items>
+                                <label alignment="center" verticalAlignment="center" hidden="YES" text="Label" id="brp-Hq-kuf">
+                                    <fontDescription key="font" type="system" weight="thin" pointSize="28"/>
+                                </label>
+                                <timer width="1" alignment="left" verticalAlignment="center" textAlignment="center" id="y7d-oo-qTM">
+                                    <fontDescription key="font" type="system" weight="thin" pointSize="28"/>
+                                    <calendarUnit key="units" minute="YES" second="YES"/>
+                                </timer>
+                            </items>
+                        </group>
+                        <picker height="15" alignment="center" verticalAlignment="center" id="VLM-dd-NxI">
+                            <connections>
+                                <action selector="pickerAction:" destination="AgC-eL-Hgc" id="jbh-Sd-LRb"/>
+                            </connections>
+                        </picker>
+                        <button width="1" alignment="left" verticalAlignment="center" title="Start" id="92P-WU-D4p">
+                            <connections>
+                                <action selector="startOrStop" destination="AgC-eL-Hgc" id="aBQ-Mf-9PD"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="group" destination="88Q-Y4-ouX" id="hMS-r3-YQp"/>
+                        <outlet property="picker" destination="VLM-dd-NxI" id="OJH-8t-Ieq"/>
+                        <outlet property="startOrStopButton" destination="92P-WU-D4p" id="ft3-5W-mzm"/>
+                        <outlet property="timerLabel" destination="y7d-oo-qTM" id="mdc-G7-wz4"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <group width="1" alignment="left" id="jbL-eS-HFW">
+                            <items>
+                                <label width="1" alignment="left" text="Tempo scaduto" textAlignment="center" numberOfLines="0" id="IdU-wH-bcW">
+                                    <fontDescription key="font" type="system" pointSize="26"/>
+                                </label>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="10" bottom="10"/>
+                        </group>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="style0" id="JfB-70-Muf">
+                        <color key="sashColor" red="0.61525535580000001" green="0.0" blue="0.17479291559999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </notificationCategory>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="4vD-aC-LRU">
+            <objects>
+                <notificationController hidesWhenLoading="NO" id="un0-BO-6Ke">
+                    <items>
+                        <group width="1" alignment="left" id="5k2-Ng-mb7">
+                            <items>
+                                <label width="1" alignment="left" text="Tempo scaduto" textAlignment="center" numberOfLines="0" id="spE-GI-ubl">
+                                    <fontDescription key="font" type="system" pointSize="26"/>
+                                </label>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="10" bottom="10"/>
+                        </group>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="style1" id="ck4-0g-K0o">
+                        <color key="titleColor" red="0.61525535580000001" green="0.0" blue="0.17479291559999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sashColor" red="0.97951275110244751" green="0.95065838098526001" blue="0.94812232255935669" alpha="1" colorSpace="calibratedRGB"/>
+                    </notificationCategory>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="spE-GI-ubl" id="4H3-1D-Uua"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="520" y="643"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="kYb-HM-2GP">
+            <objects>
+                <notificationController hidesWhenLoading="NO" id="vyW-L8-Rhy">
+                    <items>
+                        <group width="1" alignment="left" id="jbw-pA-hwR">
+                            <items>
+                                <label width="1" alignment="left" text="Tempo scaduto" textAlignment="center" numberOfLines="0" id="MW2-JZ-DsQ">
+                                    <fontDescription key="font" type="system" pointSize="26"/>
+                                </label>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="10" bottom="10"/>
+                        </group>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="style2" id="h3b-YZ-FlB"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="MW2-JZ-DsQ" id="cTK-LC-1Aw"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="831" y="643"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="R2f-g2-YkN">
+            <objects>
+                <notificationController hidesWhenLoading="NO" id="sHV-66-5A7">
+                    <items>
+                        <group width="1" alignment="left" id="fox-UT-pxy">
+                            <items>
+                                <label width="1" alignment="left" text="Tempo scaduto" textAlignment="center" numberOfLines="0" id="YzJ-Vg-aGc">
+                                    <fontDescription key="font" type="system" pointSize="26"/>
+                                </label>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="10" bottom="10"/>
+                        </group>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="style3" id="2j1-tV-X16"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="YzJ-Vg-aGc" id="bH4-UZ-poj"/>
+                        <segue destination="vXW-Ib-IMr" kind="relationship" relationship="dynamicNotificationInterface" id="yR6-Vh-zqK"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="948"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="dW1-j8-Pcl">
+            <objects>
+                <controller hidesWhenLoading="NO" id="vXW-Ib-IMr" customClass="NotificationController" customModule="WatchApp_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="5VJ-uc-l77">
+                            <items>
+                                <group width="1" alignment="left" id="Wi9-b0-LnX">
+                                    <items>
+                                        <label alignment="left" text="Durata" id="dz1-ih-E89"/>
+                                        <label alignment="right" text="Label" id="9tk-6c-r0T"/>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="Vbo-d7-5YH">
+                                    <items>
+                                        <label alignment="left" text="Inizio" id="y04-CZ-Kam"/>
+                                        <label alignment="right" text="Label" id="81Y-lL-BPH"/>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="yuH-of-iJT">
+                                    <items>
+                                        <label alignment="left" text="Fine" id="Fsl-Xj-MgH"/>
+                                        <label alignment="right" text="Label" id="SVP-kW-bb9"/>
+                                    </items>
+                                </group>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="5" bottom="5"/>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="durationLabel" destination="9tk-6c-r0T" id="gDh-Yq-stG"/>
+                        <outlet property="endLabel" destination="SVP-kW-bb9" id="viV-jk-h0w"/>
+                        <outlet property="startLabel" destination="81Y-lL-BPH" id="JYm-wH-cBo"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="520" y="948"/>
+        </scene>
+    </scenes>
+</document>

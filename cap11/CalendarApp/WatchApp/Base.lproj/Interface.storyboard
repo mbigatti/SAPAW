@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8092"/>
+    </dependencies>
+    <scenes>
+        <!--Today Events Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="TodayEventsInterfaceController" customModule="WatchApp_Extension">
+                    <items>
+                        <table alignment="left" id="xQV-dU-cTt">
+                            <items>
+                                <tableRow identifier="EventRowController" id="6Mf-s8-GGi" customClass="EventRowController" customModule="WatchApp_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" spacing="6" id="z6a-to-nWC">
+                                        <items>
+                                            <separator height="1" alignment="left" id="jeq-k0-uyl"/>
+                                            <group width="0.90000000000000002" alignment="left" layout="vertical" spacing="0.0" id="ak1-1n-ipk">
+                                                <items>
+                                                    <label alignment="left" text="Label" numberOfLines="0" id="G9f-fv-DOk">
+                                                        <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                                    </label>
+                                                    <label alignment="left" text="Label" numberOfLines="0" id="zrV-Z3-kez"/>
+                                                </items>
+                                            </group>
+                                        </items>
+                                        <edgeInsets key="margins" left="4" right="4" top="4" bottom="4"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="dateLabel" destination="zrV-Z3-kez" id="uFW-Sn-iH6"/>
+                                        <outlet property="separator" destination="jeq-k0-uyl" id="XQg-xT-T46"/>
+                                        <outlet property="titleLabel" destination="G9f-fv-DOk" id="sic-Ea-aVl"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="xQV-dU-cTt" id="ezB-80-srg"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-17" y="146"/>
+        </scene>
+        <!--EventDetail-->
+        <scene sceneID="rbY-bX-Ihu">
+            <objects>
+                <controller identifier="EventDetail" hidesWhenLoading="NO" id="7Km-dM-aJo" customClass="EventDetailInterfaceController" customModule="WatchApp_Extension">
+                    <items>
+                        <label alignment="left" text="Label" numberOfLines="0" id="2md-tS-fsK">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <label alignment="left" text="Label" id="lCT-TC-T2p">
+                            <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                        </label>
+                        <label alignment="left" text="Label" numberOfLines="0" id="JbN-Ua-JVz"/>
+                        <label alignment="left" text="CALENDARIO" id="Y0K-uB-FeL">
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
+                        <group width="1" alignment="left" radius="6" spacing="6" id="7jl-Qc-EfN">
+                            <items>
+                                <separator alignment="left" id="h8R-Di-4yo"/>
+                                <label alignment="left" verticalAlignment="center" text="Label" id="AjH-3O-Nor"/>
+                            </items>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="0.47999999999999998" colorSpace="calibratedWhite"/>
+                            <edgeInsets key="margins" left="4" right="4" top="4" bottom="4"/>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="calendarLabel" destination="AjH-3O-Nor" id="lgk-3y-QLS"/>
+                        <outlet property="calendarSeparator" destination="h8R-Di-4yo" id="OKL-So-xhD"/>
+                        <outlet property="dateLabel" destination="JbN-Ua-JVz" id="Swf-R5-hel"/>
+                        <outlet property="locationLabel" destination="lCT-TC-T2p" id="hQT-qr-liZ"/>
+                        <outlet property="titleLabel" destination="2md-tS-fsK" id="E8G-8n-d3d"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-17" y="398"/>
+        </scene>
+    </scenes>
+</document>

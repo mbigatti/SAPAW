@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8092"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchApp" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" title="Posizione attuale" id="Gq6-mS-zFa">
+                            <connections>
+                                <segue destination="gEN-34-xA8" kind="push" id="K1h-1O-Kna"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Trova città" id="pAL-gk-QAA">
+                            <connections>
+                                <segue destination="J8g-qJ-Uiv" kind="push" id="jWm-nM-7rZ"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="currentLocationButton" destination="Gq6-mS-zFa" id="QZU-4E-EZJ"/>
+                        <outlet property="findLocationButton" destination="pAL-gk-QAA" id="Iih-Su-y7X"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="188" y="258"/>
+        </scene>
+        <!--Current Location Interface Controller-->
+        <scene sceneID="7iH-QV-MQQ">
+            <objects>
+                <controller hidesWhenLoading="NO" id="gEN-34-xA8" customClass="CurrentLocationInterfaceController" customModule="WatchApp_Extension">
+                    <items>
+                        <label width="1" alignment="left" text="Label" textAlignment="center" id="WhR-XC-cLd">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <label width="1" alignment="left" text="Label" textAlignment="center" id="XKN-lQ-v1Q">
+                            <color key="textColor" red="0.12549019607843137" green="0.58039215686274503" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                        </label>
+                        <label width="1" alignment="left" text="Label" textAlignment="center" numberOfLines="0" id="gg4-g7-N1b">
+                            <color key="textColor" red="0.98039215686274506" green="0.066666666666666666" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Dettagli" id="z7q-CR-Ah7">
+                            <connections>
+                                <segue destination="BSd-jw-U7f" kind="push" id="nwI-i9-pkQ"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="detailButton" destination="z7q-CR-Ah7" id="1A8-6c-6s7"/>
+                        <outlet property="errorLabel" destination="gg4-g7-N1b" id="2lq-4A-xqp"/>
+                        <outlet property="headlineLabel" destination="WhR-XC-cLd" id="07D-JR-h0b"/>
+                        <outlet property="subtitleLabel" destination="XKN-lQ-v1Q" id="adR-2D-Zj1"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="480" y="133"/>
+        </scene>
+        <!--Current Location Detail Interface Controller-->
+        <scene sceneID="tCo-sl-rwx">
+            <objects>
+                <controller hidesWhenLoading="NO" id="BSd-jw-U7f" customClass="CurrentLocationDetailInterfaceController" customModule="WatchApp_Extension">
+                    <items>
+                        <table alignment="left" id="VBC-RP-dKI">
+                            <items>
+                                <tableRow identifier="LocationDetailRowController" id="ABt-8a-lLU" customClass="LocationDetailRowController" customModule="WatchApp_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" spacing="0.0" id="KJf-3X-STS">
+                                        <items>
+                                            <label width="1" alignment="left" text="Label" numberOfLines="0" id="wjZ-a8-rnX">
+                                                <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                            </label>
+                                            <label alignment="left" verticalAlignment="bottom" text="Label" numberOfLines="0" id="62n-I8-XUI">
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="contentLabel" destination="wjZ-a8-rnX" id="aa4-aZ-4ua"/>
+                                        <outlet property="descriptionLabel" destination="62n-I8-XUI" id="je1-du-kgD"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="VBC-RP-dKI" id="Lor-Jf-NL5"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="700" y="133"/>
+        </scene>
+        <!--Find Location Interface Controller-->
+        <scene sceneID="aof-AU-zLf">
+            <objects>
+                <controller hidesWhenLoading="NO" id="J8g-qJ-Uiv" customClass="FindLocationInterfaceController" customModule="WatchApp_Extension">
+                    <items>
+                        <label alignment="left" text="Label" id="e41-M4-eZP">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <map height="100" alignment="left" id="T9F-Te-lxf"/>
+                    </items>
+                    <connections>
+                        <outlet property="label" destination="e41-M4-eZP" id="MQe-1H-wHw"/>
+                        <outlet property="map" destination="T9F-Te-lxf" id="3JM-Tb-3ee"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="480" y="404"/>
+        </scene>
+    </scenes>
+</document>

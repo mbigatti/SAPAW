@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Glance.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>NotesApp.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>WatchApp.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>502370951B54F08B00969BE1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>50C92B471B3C2CCA00EB661E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>50C92B5E1B3C2D8100EB661E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>50C92B861B3C323B00EB661E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>50C92B8F1B3C323B00EB661E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

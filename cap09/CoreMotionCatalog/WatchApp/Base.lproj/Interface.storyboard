@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8092"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc">
+                    <items>
+                        <button width="1" alignment="left" title="Mostra Caratteristiche" id="GhK-3h-plE">
+                            <connections>
+                                <segue destination="rUz-D7-02b" kind="push" id="Q4J-MH-t3D"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Pedometro" id="QtJ-0X-oEJ">
+                            <connections>
+                                <segue destination="xMe-vb-Et0" kind="push" id="HsD-et-8AQ"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Pedometro (dati giorno precedente)" id="cy6-7L-Zh6">
+                            <connections>
+                                <segue destination="6H0-mg-cc0" kind="push" id="JIm-L7-5gR"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Attività Motoria" id="oSL-o2-g2o">
+                            <connections>
+                                <segue destination="uRY-lK-dtn" kind="push" id="tnz-ma-mWR"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Accelerometro" id="iwD-Ux-oPR">
+                            <connections>
+                                <segue destination="LX4-xS-3uB" kind="push" id="obb-IS-zsX"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Registrazione Accelerometro" id="cmE-GP-UBq">
+                            <connections>
+                                <segue destination="NRG-7e-SF7" kind="push" id="7UD-Pw-2oU"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-62" y="-348.5"/>
+        </scene>
+        <!--Motion Activity Interface Controller-->
+        <scene sceneID="DYO-y0-bjg">
+            <objects>
+                <controller hidesWhenLoading="NO" id="uRY-lK-dtn" customClass="MotionActivityInterfaceController" customModule="WatchApp_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="DfG-Gf-xGy">
+                            <items>
+                                <group width="1" alignment="left" layout="vertical" id="hJA-su-7mX">
+                                    <items>
+                                        <label alignment="left" text="--" id="J14-LG-vVS">
+                                            <color key="textColor" red="0.08235294118" green="0.87450980389999999" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                        </label>
+                                        <group width="1" alignment="left" id="Wsn-E2-sdj">
+                                            <items>
+                                                <label alignment="left" text="--" id="Fcl-BM-FWY">
+                                                    <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                                </label>
+                                                <label alignment="right" text="--" id="Y8f-0R-yWk">
+                                                    <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="2Ac-ci-OGU">
+                            <color key="color" red="0.08235294118" green="0.87450980389999999" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        </separator>
+                        <group width="1" alignment="left" layout="vertical" id="4sj-Oy-rad">
+                            <items>
+                                <label alignment="left" text="--" numberOfLines="0" id="KJ0-Oc-a1u">
+                                    <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                </label>
+                                <label alignment="left" text="--" id="nuo-At-RgM">
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                </label>
+                                <label alignment="left" text="--" id="ab0-Qq-REs">
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                </label>
+                            </items>
+                        </group>
+                        <label alignment="left" id="Znz-gn-NXd">
+                            <color key="textColor" red="0.98431372549999996" green="0.16862745100000001" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="currentActivityConfidenceLabel" destination="Y8f-0R-yWk" id="DT5-uI-NgR"/>
+                        <outlet property="currentActivityDescriptionLabel" destination="J14-LG-vVS" id="htT-VP-4QK"/>
+                        <outlet property="currentActivityStartDateLabel" destination="Fcl-BM-FWY" id="61V-IU-OkN"/>
+                        <outlet property="errorLabel" destination="Znz-gn-NXd" id="PNc-o6-km4"/>
+                        <outlet property="previousActivityEndDateLabel" destination="ab0-Qq-REs" id="prE-A3-9gq"/>
+                        <outlet property="previousActivityStartDateLabel" destination="nuo-At-RgM" id="nLx-Qa-ZJm"/>
+                        <outlet property="previousActivityTitleLabel" destination="KJ0-Oc-a1u" id="nle-ra-Iob"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="52" y="105"/>
+        </scene>
+        <!--Sensor Recorder Interface Controller-->
+        <scene sceneID="4sm-yl-8fj">
+            <objects>
+                <controller hidesWhenLoading="NO" id="NRG-7e-SF7" customClass="SensorRecorderInterfaceController" customModule="WatchApp_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="Registra" id="Fwh-Sz-jpm">
+                            <connections>
+                                <action selector="record" destination="NRG-7e-SF7" id="Af7-nc-UYT"/>
+                            </connections>
+                        </button>
+                        <label alignment="left" text="Label" numberOfLines="0" id="kzm-9M-aQC">
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
+                        <group width="1" alignment="left" layout="vertical" spacing="0.0" id="9Kl-ro-6iO">
+                            <items>
+                                <group width="1" height="40" alignment="left" spacing="0.0" id="wyq-Nq-6eQ">
+                                    <items>
+                                        <group width="0.10000000000000001" height="1" alignment="left" verticalAlignment="bottom" radius="4" id="pvd-qw-oi0">
+                                            <color key="backgroundColor" red="0.08235294118" green="0.87450980389999999" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                        <group width="0.10000000000000001" height="0.59999999999999998" alignment="center" verticalAlignment="bottom" radius="4" id="Ogk-4p-waR">
+                                            <color key="backgroundColor" red="0.08235294118" green="0.87450980389999999" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                        <group width="0.10000000000000001" height="0.40000000000000002" alignment="right" verticalAlignment="bottom" radius="4" id="41l-4W-dZU">
+                                            <color key="backgroundColor" red="0.08235294118" green="0.87450980389999999" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                    </items>
+                                    <edgeInsets key="margins" left="20" right="20" top="4" bottom="0.0"/>
+                                </group>
+                                <group width="1" height="40" alignment="left" spacing="0.0" id="lid-Wl-eO4">
+                                    <items>
+                                        <group width="0.10000000000000001" height="1" alignment="left" radius="4" id="x2H-3a-ICM">
+                                            <color key="backgroundColor" red="0.98431372549999996" green="0.16862745100000001" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                        <group width="0.10000000000000001" height="0.59999999999999998" alignment="center" radius="4" id="UQh-fq-v8l">
+                                            <color key="backgroundColor" red="0.98431372549999996" green="0.16862745100000001" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                        <group width="0.10000000000000001" height="1" alignment="right" radius="4" id="D73-Nb-PcG">
+                                            <color key="backgroundColor" red="0.98431372549999996" green="0.16862745100000001" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                    </items>
+                                    <edgeInsets key="margins" left="20" right="20" top="0.0" bottom="0.0"/>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="groupNegativeX" destination="x2H-3a-ICM" id="trx-b8-ns8"/>
+                        <outlet property="groupNegativeY" destination="UQh-fq-v8l" id="GVA-9a-bub"/>
+                        <outlet property="groupNegativeZ" destination="D73-Nb-PcG" id="iZc-HD-VuX"/>
+                        <outlet property="groupPositiveX" destination="pvd-qw-oi0" id="4Zy-Iy-mYm"/>
+                        <outlet property="groupPositiveY" destination="Ogk-4p-waR" id="naH-fO-5lO"/>
+                        <outlet property="groupPositiveZ" destination="41l-4W-dZU" id="Kc3-7g-om7"/>
+                        <outlet property="recordButton" destination="Fwh-Sz-jpm" id="3C2-SO-ZvA"/>
+                        <outlet property="statusLabel" destination="kzm-9M-aQC" id="XXA-gm-asn"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="513" y="105"/>
+        </scene>
+        <!--Pedometer Interface Controller-->
+        <scene sceneID="Hge-T9-f88">
+            <objects>
+                <controller hidesWhenLoading="NO" id="xMe-vb-Et0" customClass="PedometerInterfaceController" customModule="WatchApp_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="M2x-56-qdd">
+                            <items>
+                                <label alignment="left" text="--" id="1Ni-lF-pl4">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                                <label alignment="right" text="--" id="WgF-ZM-QYZ">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="FN6-os-XvX">
+                            <items>
+                                <label alignment="left" text="Passi" id="wRr-v7-oIE"/>
+                                <label alignment="right" text="--" id="qkC-jg-nTa">
+                                    <color key="textColor" red="0.08235294118" green="0.87450980389999999" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="aoH-RI-ufE">
+                            <items>
+                                <label alignment="left" text="Distanza (m)" id="SMa-f1-84P"/>
+                                <label alignment="right" text="--" id="eDR-I1-GBN">
+                                    <color key="textColor" red="0.08235294118" green="0.87450980389999999" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="vqr-qG-AFl">
+                            <items>
+                                <label alignment="left" text="Ritmo (s/m)" id="77O-nL-xyK"/>
+                                <label alignment="right" text="--" id="Zh1-nt-JZV">
+                                    <color key="textColor" red="0.08235294118" green="0.87450980389999999" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="lXk-HP-LCO">
+                            <items>
+                                <label alignment="left" text="Cadenza (s/s)" id="mzA-dz-IVs"/>
+                                <label alignment="right" text="--" id="KQB-Ns-fQ2">
+                                    <color key="textColor" red="0.08235294118" green="0.87450980389999999" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                        <label alignment="left" numberOfLines="0" id="TN0-Ax-h4P">
+                            <color key="textColor" red="0.98431372549999996" green="0.16862745100000001" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
+                        <group width="1" alignment="left" id="TUX-Za-RzE">
+                            <items>
+                                <button width="0.5" alignment="left" title="Start" id="k27-bs-boA">
+                                    <connections>
+                                        <action selector="startButtonTapped" destination="xMe-vb-Et0" id="TGs-A3-Trd"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" alignment="left" title="Stop" id="kcX-7P-bUA">
+                                    <connections>
+                                        <action selector="stopButtonTapped" destination="xMe-vb-Et0" id="xO4-c7-Y3t"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="cadenceLabel" destination="KQB-Ns-fQ2" id="7lO-GW-0Up"/>
+                        <outlet property="distanceLabel" destination="eDR-I1-GBN" id="T8F-yc-199"/>
+                        <outlet property="endDateLabel" destination="WgF-ZM-QYZ" id="czE-IB-dIY"/>
+                        <outlet property="errorLabel" destination="TN0-Ax-h4P" id="2tJ-B0-2TU"/>
+                        <outlet property="paceLabel" destination="Zh1-nt-JZV" id="Cr7-Xy-VPz"/>
+                        <outlet property="startButton" destination="k27-bs-boA" id="zU8-Zh-RKV"/>
+                        <outlet property="startDateLabel" destination="1Ni-lF-pl4" id="AUx-MS-YDE"/>
+                        <outlet property="stepsLabel" destination="qkC-jg-nTa" id="oW8-pi-FD0"/>
+                        <outlet property="stopButton" destination="kcX-7P-bUA" id="sB9-Ni-4zU"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-396" y="110.5"/>
+        </scene>
+        <!--Pedometer History Interface Controller-->
+        <scene sceneID="UQA-oH-Gam">
+            <objects>
+                <controller hidesWhenLoading="NO" id="6H0-mg-cc0" customClass="PedometerHistoryInterfaceController" customModule="WatchApp_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="pjH-Ii-2VY">
+                            <items>
+                                <label alignment="left" text="Inizio" id="dJ7-QX-wsx"/>
+                                <label alignment="right" text="--" id="Jui-Ct-sU8">
+                                    <color key="textColor" red="0.08235294118" green="0.87450980389999999" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="kuK-Q2-kW3">
+                            <items>
+                                <label alignment="left" text="Fine" id="B7q-mv-trg"/>
+                                <label alignment="right" text="--" id="jmK-mG-M58">
+                                    <color key="textColor" red="0.08235294118" green="0.87450980389999999" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="e3D-Y6-7Z4">
+                            <items>
+                                <label alignment="left" text="Passi" id="rrw-RC-Bbz"/>
+                                <label alignment="right" text="--" id="6Ui-cy-0fZ">
+                                    <color key="textColor" red="0.08235294118" green="0.87450980389999999" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="uWB-St-WAa">
+                            <items>
+                                <label alignment="left" text="Distanza (km)" id="HyS-C5-CNp"/>
+                                <label alignment="right" text="--" id="833-xr-H6C">
+                                    <color key="textColor" red="0.08235294118" green="0.87450980389999999" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                        <label alignment="left" numberOfLines="0" id="ZBc-aD-gjQ">
+                            <color key="textColor" red="0.98431372549999996" green="0.16862745100000001" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="distanceLabel" destination="833-xr-H6C" id="BjC-AR-IY8"/>
+                        <outlet property="endDateLabel" destination="jmK-mG-M58" id="0Xv-GB-Xbb"/>
+                        <outlet property="errorLabel" destination="ZBc-aD-gjQ" id="ba6-5v-Q9B"/>
+                        <outlet property="startDateLabel" destination="Jui-Ct-sU8" id="GGa-ff-cff"/>
+                        <outlet property="stepsLabel" destination="6Ui-cy-0fZ" id="exB-Gj-Vcc"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-174" y="105"/>
+        </scene>
+        <!--Features Interface Controller-->
+        <scene sceneID="Ten-au-W9z">
+            <objects>
+                <controller hidesWhenLoading="NO" id="rUz-D7-02b" customClass="FeaturesInterfaceController" customModule="WatchApp_Extension">
+                    <items>
+                        <table alignment="left" id="h3w-gG-VOC">
+                            <items>
+                                <tableRow identifier="TitleRow" id="FSS-pT-UdM" customClass="TitleRowController" customModule="WatchApp_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="sRz-7A-EWL">
+                                        <items>
+                                            <label alignment="center" text="Label" textAlignment="left" minimumScaleFactor="0.5" id="nfS-H4-OuJ">
+                                                <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                            </label>
+                                            <separator alignment="left" id="9lo-5N-Ema">
+                                                <color key="color" red="0.08235294118" green="0.87450980389999999" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                            </separator>
+                                        </items>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <edgeInsets key="margins" left="0.0" right="0.0" top="5" bottom="0.0"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="label" destination="nfS-H4-OuJ" id="kAg-NY-Jc5"/>
+                                    </connections>
+                                </tableRow>
+                                <tableRow identifier="FeatureRow" selectable="NO" id="EHq-cj-mCJ" customClass="FeatureRowController" customModule="WatchApp_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="4HJ-MQ-uhI">
+                                        <items>
+                                            <label width="0.84999999999999998" alignment="left" verticalAlignment="center" text="Label" numberOfLines="0" id="pTy-ev-DS8"/>
+                                            <label alignment="right" verticalAlignment="center" text="Si" id="xXW-P8-Y3m">
+                                                <color key="textColor" red="0.08235294118" green="0.87450980389999999" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="featureAvailable" destination="xXW-P8-Y3m" id="SMt-vI-fdW"/>
+                                        <outlet property="featureLabel" destination="pTy-ev-DS8" id="2f5-zd-jsI"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="h3w-gG-VOC" id="2Gs-sJ-CZC"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-620" y="105"/>
+        </scene>
+        <!--Accelerometer Interface Controller-->
+        <scene sceneID="TO5-v7-Vwm">
+            <objects>
+                <controller hidesWhenLoading="NO" id="LX4-xS-3uB" customClass="AccelerometerInterfaceController" customModule="WatchApp_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" spacing="0.0" id="cAh-hK-eUS">
+                            <items>
+                                <group width="1" height="40" alignment="left" spacing="0.0" id="7r1-FH-7gW">
+                                    <items>
+                                        <group width="0.10000000000000001" height="1" alignment="left" verticalAlignment="bottom" radius="4" id="NJb-nn-m9I">
+                                            <color key="backgroundColor" red="0.08235294118" green="0.87450980389999999" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                        <group width="0.10000000000000001" height="0.59999999999999998" alignment="center" verticalAlignment="bottom" radius="4" id="aOr-zR-saV">
+                                            <color key="backgroundColor" red="0.08235294118" green="0.87450980389999999" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                        <group width="0.10000000000000001" height="0.40000000000000002" alignment="right" verticalAlignment="bottom" radius="4" id="v3t-Fc-hww">
+                                            <color key="backgroundColor" red="0.08235294118" green="0.87450980389999999" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                    </items>
+                                    <edgeInsets key="margins" left="20" right="20" top="4" bottom="0.0"/>
+                                </group>
+                                <group width="1" height="40" alignment="left" spacing="0.0" id="Ywf-DD-6ui">
+                                    <items>
+                                        <group width="0.10000000000000001" height="0.69999999999999996" alignment="left" radius="4" id="EnQ-ju-0OU">
+                                            <color key="backgroundColor" red="0.98431372549999996" green="0.16862745100000001" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                        <group width="0.10000000000000001" height="0.29999999999999999" alignment="center" radius="4" id="dj6-sF-Pyg">
+                                            <color key="backgroundColor" red="0.98431372549999996" green="0.16862745100000001" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                        <group width="0.10000000000000001" height="1" alignment="right" radius="4" id="1Q1-mi-73c">
+                                            <color key="backgroundColor" red="0.98431372549999996" green="0.16862745100000001" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                    </items>
+                                    <edgeInsets key="margins" left="20" right="20" top="0.0" bottom="0.0"/>
+                                </group>
+                                <group width="1" alignment="left" id="LT3-VI-7fi">
+                                    <items>
+                                        <label alignment="left" text="Label" id="ROL-S0-GrK">
+                                            <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                        </label>
+                                        <label alignment="center" text="Label" id="03j-hd-uSd">
+                                            <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                        </label>
+                                        <label alignment="right" text="Label" id="G1D-vF-x2Y">
+                                            <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                        </label>
+                                    </items>
+                                    <edgeInsets key="margins" left="4" right="4" top="0.0" bottom="0.0"/>
+                                </group>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="10"/>
+                        </group>
+                        <group width="1" alignment="left" spacing="4" id="kN8-wd-5nm">
+                            <items>
+                                <group width="8" height="8" alignment="left" verticalAlignment="center" radius="4" id="QRo-OM-ZT4">
+                                    <color key="backgroundColor" red="0.35294117650000001" green="0.7843137255" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                </group>
+                                <label alignment="left" text="Label" numberOfLines="0" id="Gxg-va-Fyl">
+                                    <color key="textColor" red="0.98431372549999996" green="0.16862745100000001" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                </label>
+                            </items>
+                            <edgeInsets key="margins" left="4" right="0.0" top="0.0" bottom="0.0"/>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="errorLabel" destination="Gxg-va-Fyl" id="QuC-3d-eGe"/>
+                        <outlet property="groupNegativeX" destination="EnQ-ju-0OU" id="DkN-p5-6NY"/>
+                        <outlet property="groupNegativeY" destination="dj6-sF-Pyg" id="jEB-Zc-Nrp"/>
+                        <outlet property="groupNegativeZ" destination="1Q1-mi-73c" id="dgg-yL-hRx"/>
+                        <outlet property="groupPositiveX" destination="NJb-nn-m9I" id="7z9-6J-9p9"/>
+                        <outlet property="groupPositiveY" destination="aOr-zR-saV" id="vKT-5J-CMd"/>
+                        <outlet property="groupPositiveZ" destination="v3t-Fc-hww" id="63u-la-dGz"/>
+                        <outlet property="labelX" destination="ROL-S0-GrK" id="Y59-SF-5zp"/>
+                        <outlet property="labelY" destination="03j-hd-uSd" id="B8L-1s-wu3"/>
+                        <outlet property="labelZ" destination="G1D-vF-x2Y" id="nNM-FO-X8i"/>
+                        <outlet property="updateGroup" destination="QRo-OM-ZT4" id="TxD-ED-7NX"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="286" y="105"/>
+        </scene>
+    </scenes>
+</document>

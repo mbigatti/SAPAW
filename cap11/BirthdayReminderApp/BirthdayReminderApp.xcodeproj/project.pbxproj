@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5075ABE91B668F0C00039ACD /* ContactMapRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5075ABE81B668F0C00039ACD /* ContactMapRowController.swift */; };
+		50EEA7191B66248600F8878B /* ContactSummaryRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EEA7181B66248600F8878B /* ContactSummaryRowController.swift */; };
+		50EEA71B1B6629DA00F8878B /* ContactInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EEA71A1B6629DA00F8878B /* ContactInterfaceController.swift */; };
+		50EEA71D1B662C4D00F8878B /* ContactDetailRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EEA71C1B662C4D00F8878B /* ContactDetailRowController.swift */; };
+		50EEA71F1B665EEA00F8878B /* ContactsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EEA71E1B665EEA00F8878B /* ContactsManager.swift */; };
+		50EEA7211B66649200F8878B /* CNContact+Birthday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EEA7201B66649200F8878B /* CNContact+Birthday.swift */; };
+		50F6FEF51B59567700966863 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F6FEF41B59567700966863 /* AppDelegate.swift */; };
+		50F6FEF71B59567700966863 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F6FEF61B59567700966863 /* ViewController.swift */; };
+		50F6FEFA1B59567700966863 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50F6FEF81B59567700966863 /* Main.storyboard */; };
+		50F6FEFC1B59567700966863 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50F6FEFB1B59567700966863 /* Assets.xcassets */; };
+		50F6FEFF1B59567700966863 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50F6FEFD1B59567700966863 /* LaunchScreen.storyboard */; };
+		50F6FF0C1B59568500966863 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50F6FF0A1B59568500966863 /* Interface.storyboard */; };
+		50F6FF0E1B59568500966863 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50F6FF0D1B59568500966863 /* Assets.xcassets */; };
+		50F6FF151B59568500966863 /* WatchApp Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 50F6FF141B59568500966863 /* WatchApp Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		50F6FF1A1B59568500966863 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F6FF191B59568500966863 /* InterfaceController.swift */; };
+		50F6FF1C1B59568500966863 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F6FF1B1B59568500966863 /* ExtensionDelegate.swift */; };
+		50F6FF1E1B59568500966863 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F6FF1D1B59568500966863 /* GlanceController.swift */; };
+		50F6FF201B59568500966863 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50F6FF1F1B59568500966863 /* Assets.xcassets */; };
+		50F6FF241B59568500966863 /* WatchApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 50F6FF081B59568500966863 /* WatchApp.app */; };
+		50F6FF301B59574800966863 /* ContactsCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F6FF2F1B59574800966863 /* ContactsCreator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50F6FF161B59568500966863 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50F6FEE91B59567700966863 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50F6FF131B59568500966863;
+			remoteInfo = "WatchApp Extension";
+		};
+		50F6FF221B59568500966863 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50F6FEE91B59567700966863 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50F6FF071B59568500966863;
+			remoteInfo = WatchApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		50F6FF281B59568500966863 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				50F6FF151B59568500966863 /* WatchApp Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50F6FF2C1B59568500966863 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				50F6FF241B59568500966863 /* WatchApp.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5075ABE81B668F0C00039ACD /* ContactMapRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactMapRowController.swift; sourceTree = "<group>"; };
+		50EEA7181B66248600F8878B /* ContactSummaryRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactSummaryRowController.swift; sourceTree = "<group>"; };
+		50EEA71A1B6629DA00F8878B /* ContactInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactInterfaceController.swift; sourceTree = "<group>"; };
+		50EEA71C1B662C4D00F8878B /* ContactDetailRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailRowController.swift; sourceTree = "<group>"; };
+		50EEA71E1B665EEA00F8878B /* ContactsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsManager.swift; sourceTree = "<group>"; };
+		50EEA7201B66649200F8878B /* CNContact+Birthday.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CNContact+Birthday.swift"; sourceTree = "<group>"; };
+		50F6FEF11B59567700966863 /* BirthdayReminderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirthdayReminderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50F6FEF41B59567700966863 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		50F6FEF61B59567700966863 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		50F6FEF91B59567700966863 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		50F6FEFB1B59567700966863 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50F6FEFE1B59567700966863 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		50F6FF001B59567700966863 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50F6FF081B59568500966863 /* WatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50F6FF0B1B59568500966863 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		50F6FF0D1B59568500966863 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50F6FF0F1B59568500966863 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50F6FF141B59568500966863 /* WatchApp Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchApp Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50F6FF191B59568500966863 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		50F6FF1B1B59568500966863 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		50F6FF1D1B59568500966863 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		50F6FF1F1B59568500966863 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50F6FF211B59568500966863 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50F6FF2F1B59574800966863 /* ContactsCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsCreator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50F6FEEE1B59567700966863 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50F6FF111B59568500966863 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50F6FEE81B59567700966863 = {
+			isa = PBXGroup;
+			children = (
+				50F6FEF31B59567700966863 /* BirthdayReminderApp */,
+				50F6FF091B59568500966863 /* WatchApp */,
+				50F6FF181B59568500966863 /* WatchApp Extension */,
+				50F6FEF21B59567700966863 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50F6FEF21B59567700966863 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50F6FEF11B59567700966863 /* BirthdayReminderApp.app */,
+				50F6FF081B59568500966863 /* WatchApp.app */,
+				50F6FF141B59568500966863 /* WatchApp Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50F6FEF31B59567700966863 /* BirthdayReminderApp */ = {
+			isa = PBXGroup;
+			children = (
+				50F6FEF41B59567700966863 /* AppDelegate.swift */,
+				50F6FEF61B59567700966863 /* ViewController.swift */,
+				50F6FEF81B59567700966863 /* Main.storyboard */,
+				50F6FEFB1B59567700966863 /* Assets.xcassets */,
+				50F6FEFD1B59567700966863 /* LaunchScreen.storyboard */,
+				50F6FF001B59567700966863 /* Info.plist */,
+			);
+			path = BirthdayReminderApp;
+			sourceTree = "<group>";
+		};
+		50F6FF091B59568500966863 /* WatchApp */ = {
+			isa = PBXGroup;
+			children = (
+				50F6FF0A1B59568500966863 /* Interface.storyboard */,
+				50F6FF0D1B59568500966863 /* Assets.xcassets */,
+				50F6FF0F1B59568500966863 /* Info.plist */,
+			);
+			path = WatchApp;
+			sourceTree = "<group>";
+		};
+		50F6FF181B59568500966863 /* WatchApp Extension */ = {
+			isa = PBXGroup;
+			children = (
+				50F6FF191B59568500966863 /* InterfaceController.swift */,
+				50EEA71A1B6629DA00F8878B /* ContactInterfaceController.swift */,
+				50EEA7181B66248600F8878B /* ContactSummaryRowController.swift */,
+				50EEA71C1B662C4D00F8878B /* ContactDetailRowController.swift */,
+				5075ABE81B668F0C00039ACD /* ContactMapRowController.swift */,
+				50F6FF1D1B59568500966863 /* GlanceController.swift */,
+				50EEA71E1B665EEA00F8878B /* ContactsManager.swift */,
+				50F6FF2F1B59574800966863 /* ContactsCreator.swift */,
+				50EEA7201B66649200F8878B /* CNContact+Birthday.swift */,
+				50F6FF1B1B59568500966863 /* ExtensionDelegate.swift */,
+				50F6FF1F1B59568500966863 /* Assets.xcassets */,
+				50F6FF211B59568500966863 /* Info.plist */,
+			);
+			path = "WatchApp Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50F6FEF01B59567700966863 /* BirthdayReminderApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50F6FF031B59567700966863 /* Build configuration list for PBXNativeTarget "BirthdayReminderApp" */;
+			buildPhases = (
+				50F6FEED1B59567700966863 /* Sources */,
+				50F6FEEE1B59567700966863 /* Frameworks */,
+				50F6FEEF1B59567700966863 /* Resources */,
+				50F6FF2C1B59568500966863 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50F6FF231B59568500966863 /* PBXTargetDependency */,
+			);
+			name = BirthdayReminderApp;
+			productName = BirthdayReminderApp;
+			productReference = 50F6FEF11B59567700966863 /* BirthdayReminderApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		50F6FF071B59568500966863 /* WatchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50F6FF291B59568500966863 /* Build configuration list for PBXNativeTarget "WatchApp" */;
+			buildPhases = (
+				50F6FF061B59568500966863 /* Resources */,
+				50F6FF281B59568500966863 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50F6FF171B59568500966863 /* PBXTargetDependency */,
+			);
+			name = WatchApp;
+			productName = WatchApp;
+			productReference = 50F6FF081B59568500966863 /* WatchApp.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		50F6FF131B59568500966863 /* WatchApp Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50F6FF251B59568500966863 /* Build configuration list for PBXNativeTarget "WatchApp Extension" */;
+			buildPhases = (
+				50F6FF101B59568500966863 /* Sources */,
+				50F6FF111B59568500966863 /* Frameworks */,
+				50F6FF121B59568500966863 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchApp Extension";
+			productName = "WatchApp Extension";
+			productReference = 50F6FF141B59568500966863 /* WatchApp Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50F6FEE91B59567700966863 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Massimiliano Bigatti";
+				TargetAttributes = {
+					50F6FEF01B59567700966863 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					50F6FF071B59568500966863 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					50F6FF131B59568500966863 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 50F6FEEC1B59567700966863 /* Build configuration list for PBXProject "BirthdayReminderApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50F6FEE81B59567700966863;
+			productRefGroup = 50F6FEF21B59567700966863 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50F6FEF01B59567700966863 /* BirthdayReminderApp */,
+				50F6FF071B59568500966863 /* WatchApp */,
+				50F6FF131B59568500966863 /* WatchApp Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50F6FEEF1B59567700966863 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50F6FEFF1B59567700966863 /* LaunchScreen.storyboard in Resources */,
+				50F6FEFC1B59567700966863 /* Assets.xcassets in Resources */,
+				50F6FEFA1B59567700966863 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50F6FF061B59568500966863 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50F6FF0E1B59568500966863 /* Assets.xcassets in Resources */,
+				50F6FF0C1B59568500966863 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50F6FF121B59568500966863 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50F6FF201B59568500966863 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50F6FEED1B59567700966863 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50F6FEF71B59567700966863 /* ViewController.swift in Sources */,
+				50F6FEF51B59567700966863 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50F6FF101B59568500966863 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50F6FF1C1B59568500966863 /* ExtensionDelegate.swift in Sources */,
+				50EEA71F1B665EEA00F8878B /* ContactsManager.swift in Sources */,
+				50F6FF1A1B59568500966863 /* InterfaceController.swift in Sources */,
+				50F6FF301B59574800966863 /* ContactsCreator.swift in Sources */,
+				5075ABE91B668F0C00039ACD /* ContactMapRowController.swift in Sources */,
+				50EEA71D1B662C4D00F8878B /* ContactDetailRowController.swift in Sources */,
+				50EEA7211B66649200F8878B /* CNContact+Birthday.swift in Sources */,
+				50EEA7191B66248600F8878B /* ContactSummaryRowController.swift in Sources */,
+				50EEA71B1B6629DA00F8878B /* ContactInterfaceController.swift in Sources */,
+				50F6FF1E1B59568500966863 /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50F6FF171B59568500966863 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50F6FF131B59568500966863 /* WatchApp Extension */;
+			targetProxy = 50F6FF161B59568500966863 /* PBXContainerItemProxy */;
+		};
+		50F6FF231B59568500966863 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50F6FF071B59568500966863 /* WatchApp */;
+			targetProxy = 50F6FF221B59568500966863 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		50F6FEF81B59567700966863 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50F6FEF91B59567700966863 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		50F6FEFD1B59567700966863 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50F6FEFE1B59567700966863 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		50F6FF0A1B59568500966863 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50F6FF0B1B59568500966863 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		50F6FF011B59567700966863 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		50F6FF021B59567700966863 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50F6FF041B59567700966863 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BirthdayReminderApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = it.bigatti.samples.BirthdayReminderApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		50F6FF051B59567700966863 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BirthdayReminderApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = it.bigatti.samples.BirthdayReminderApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		50F6FF261B59568500966863 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "WatchApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = it.bigatti.samples.BirthdayReminderApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		50F6FF271B59568500966863 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "WatchApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = it.bigatti.samples.BirthdayReminderApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		50F6FF2A1B59568500966863 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = WatchApp_Extension;
+				INFOPLIST_FILE = WatchApp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = it.bigatti.samples.BirthdayReminderApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		50F6FF2B1B59568500966863 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = WatchApp_Extension;
+				INFOPLIST_FILE = WatchApp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = it.bigatti.samples.BirthdayReminderApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50F6FEEC1B59567700966863 /* Build configuration list for PBXProject "BirthdayReminderApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50F6FF011B59567700966863 /* Debug */,
+				50F6FF021B59567700966863 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50F6FF031B59567700966863 /* Build configuration list for PBXNativeTarget "BirthdayReminderApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50F6FF041B59567700966863 /* Debug */,
+				50F6FF051B59567700966863 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50F6FF251B59568500966863 /* Build configuration list for PBXNativeTarget "WatchApp Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50F6FF261B59568500966863 /* Debug */,
+				50F6FF271B59568500966863 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50F6FF291B59568500966863 /* Build configuration list for PBXNativeTarget "WatchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50F6FF2A1B59568500966863 /* Debug */,
+				50F6FF2B1B59568500966863 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50F6FEE91B59567700966863 /* Project object */;
+}

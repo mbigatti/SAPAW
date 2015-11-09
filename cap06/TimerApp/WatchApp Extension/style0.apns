@@ -1,0 +1,8 @@
+{
+    "aps": {
+        "alert": {
+            "body": "Tempo scaduto"
+        },
+        "category": "style0"
+    },
+}
