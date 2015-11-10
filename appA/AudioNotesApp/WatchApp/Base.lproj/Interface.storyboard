@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QLx-lN-r2A">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8092"/>
+    </dependencies>
+    <scenes>
+        <!--Main Interface Controller-->
+        <scene sceneID="Xsp-VV-nAb">
+            <objects>
+                <controller hidesWhenLoading="NO" id="QLx-lN-r2A" customClass="MainInterfaceController" customModule="WatchApp_Extension">
+                    <items>
+                        <table alignment="left" id="pTP-an-vG6">
+                            <items>
+                                <tableRow identifier="AudioRowController" id="Qh2-oq-uk0" customClass="AudioRowController" customModule="WatchApp_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="qMS-vl-DNl">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="N52-R4-bSs">
+                                                <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                            </label>
+                                            <label alignment="right" verticalAlignment="center" text="Label" id="ECA-Ir-CaM">
+                                                <color key="textColor" red="0.35686274509803922" green="0.78431372549019607" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" red="0.35686274509803922" green="0.78431372549019607" blue="0.98431372549019602" alpha="0.14999999999999999" colorSpace="calibratedRGB"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="dateLabel" destination="N52-R4-bSs" id="Oxy-Dg-x9n"/>
+                                        <outlet property="durationLabel" destination="ECA-Ir-CaM" id="yAk-aw-Rja"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <button width="1" alignment="left" title="Registra" id="zMK-3p-G0Z">
+                            <connections>
+                                <action selector="recordButtonTapped" destination="QLx-lN-r2A" id="hl4-eW-9Tq"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Riproduci tutti" id="Mwe-om-SKV">
+                            <connections>
+                                <action selector="playAllButtonButtonTapped" destination="QLx-lN-r2A" id="VPP-vy-Poe"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Cancella" id="2DE-wV-cDj">
+                            <color key="titleColor" red="0.98039215686274506" green="0.062745098039215685" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.98039215686274506" green="0.062745098039215685" blue="0.30980392156862746" alpha="0.17000000000000001" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="deleteButtonTapped" destination="QLx-lN-r2A" id="LZ4-0g-crp"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="deleteButton" destination="2DE-wV-cDj" id="UoV-QJ-hUB"/>
+                        <outlet property="playAllButton" destination="Mwe-om-SKV" id="aIp-Ic-tmd"/>
+                        <outlet property="recordButton" destination="zMK-3p-G0Z" id="r39-ZR-j8F"/>
+                        <outlet property="table" destination="pTP-an-vG6" id="Jd0-FI-Rpo"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="62" y="171.5"/>
+        </scene>
+        <!--Playback-->
+        <scene sceneID="u3W-7E-uID">
+            <objects>
+                <controller identifier="Playback" hidesWhenLoading="NO" id="Nje-bj-XNK" customClass="PlaybackInterfaceController" customModule="WatchApp_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="9hY-3M-8Qr">
+                            <items>
+                                <group width="1" height="10" alignment="left" id="hLo-Kf-uYD"/>
+                                <label alignment="left" text="Riproduzione" id="SM9-v4-ehd">
+                                    <fontDescription key="font" type="system" weight="light" pointSize="18"/>
+                                </label>
+                                <separator alignment="left" id="ZHt-4q-Fmq">
+                                    <color key="color" red="0.35294117650000001" green="0.7843137255" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <group width="1" height="5" alignment="left" id="2HP-Ns-wUq"/>
+                                <label alignment="left" text="Label" numberOfLines="0" id="sij-4V-WNY">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                                <label alignment="left" text="Label" id="pbW-Yx-jtp">
+                                    <color key="textColor" red="0.35294117650000001" green="0.7843137255" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="left" text="Pronto" numberOfLines="0" id="yiv-1H-IAG">
+                                    <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                </label>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Interrompi" id="8x4-U4-KaM">
+                            <connections>
+                                <action selector="stop" destination="Nje-bj-XNK" id="6sD-Tf-caW"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="durationLabel" destination="pbW-Yx-jtp" id="qIy-YK-7MB"/>
+                        <outlet property="statusLabel" destination="yiv-1H-IAG" id="MC4-rl-Nzq"/>
+                        <outlet property="titleLabel" destination="sij-4V-WNY" id="MSJ-BF-Gyc"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="305" y="169"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>StringsTable</key>
+	<string>Root</string>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>Durata registrazione</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSSliderSpecifier</string>
+			<key>Key</key>
+			<string>registration_maximum_duration</string>
+			<key>DefaultValue</key>
+			<integer>30</integer>
+			<key>MinimumValue</key>
+			<integer>10</integer>
+			<key>MaximumValue</key>
+			<integer>60</integer>
+			<key>MinimumValueImage</key>
+			<string></string>
+			<key>MaximumValueImage</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>Altro</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Qualità audio</string>
+			<key>Key</key>
+			<string>audio_preset</string>
+			<key>DefaultValue</key>
+			<string>narrow</string>
+			<key>Values</key>
+			<array>
+				<string>narrow</string>
+				<string>wide</string>
+				<string>hq</string>
+			</array>
+			<key>Titles</key>
+			<array>
+				<string>Banda stretta</string>
+				<string>Banda larga</string>
+				<string>Alta qualità</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Consenti cancellazione</string>
+			<key>Key</key>
+			<string>enable_delete</string>
+			<key>DefaultValue</key>
+			<true/>
+		</dict>
+	</array>
+	<key>ApplicationGroupContainerIdentifier</key>
+	<string></string>
+</dict>
+</plist>
