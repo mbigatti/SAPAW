@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9019"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchApp" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" title="Nuovo allenamento" id="QAO-dy-2fe">
+                            <color key="titleColor" red="0.015686274509803921" green="0.87058823529411766" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.015686274509803921" green="0.87058823529411766" blue="0.44313725490196076" alpha="0.14000000000000001" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="U3z-KA-W6U" kind="push" id="H6W-y2-7Is"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Allenamenti precedenti" id="tBG-49-eY2">
+                            <connections>
+                                <segue destination="dQI-DD-nec" kind="push" id="EMy-DB-jij"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="164" y="256"/>
+        </scene>
+        <!--New Workout Interface Controller-->
+        <scene sceneID="Wxg-Hj-xyY">
+            <objects>
+                <controller hidesWhenLoading="NO" id="U3z-KA-W6U" customClass="NewWorkoutInterfaceController" customModule="WatchApp_Extension">
+                    <items>
+                        <group width="0.5" height="0.40000000000000002" alignment="center" radius="0.0" spacing="6" id="4TP-c3-QI2">
+                            <items>
+                                <group width="0.5" height="1" alignment="left" layout="vertical" id="CL2-pt-j1d">
+                                    <items>
+                                        <group width="1" height="0.20000000000000001" alignment="left" id="4ml-xN-kT8">
+                                            <color key="backgroundColor" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                        <group width="1" height="0.20000000000000001" alignment="left" id="55B-D4-zXx">
+                                            <color key="backgroundColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                        <group width="1" height="0.20000000000000001" alignment="left" id="ETh-zJ-n3R">
+                                            <color key="backgroundColor" red="1" green="0.90196078430000004" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                        <group width="1" height="0.20000000000000001" alignment="left" id="MFj-rl-1ED">
+                                            <color key="backgroundColor" red="0.08235294118" green="0.87450980389999999" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                        <group width="1" height="0.20000000000000001" alignment="left" id="fI0-j4-JMb">
+                                            <color key="backgroundColor" red="0.30980392159999998" green="0.74509803919999995" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                    </items>
+                                </group>
+                                <group width="0.5" height="1" alignment="left" id="gWu-DK-39Q">
+                                    <items>
+                                        <group width="20" height="0.5" alignment="left" verticalAlignment="bottom" layout="vertical" id="azg-d2-Ucd">
+                                            <items>
+                                                <separator alignment="left" id="qn4-J0-aqf">
+                                                    <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </separator>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Avvia" id="egY-RV-Yqx">
+                            <connections>
+                                <action selector="buttonTapped" destination="U3z-KA-W6U" id="yAr-fn-Zpp"/>
+                            </connections>
+                        </button>
+                        <separator alignment="left" verticalAlignment="bottom" id="V2J-Ev-eNg">
+                            <color key="color" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </separator>
+                        <group width="1" alignment="left" verticalAlignment="bottom" id="n0z-vN-PlI">
+                            <items>
+                                <timer alignment="left" id="mTh-Kx-aGZ"/>
+                                <imageView width="16" height="16" alignment="right" image="Heart" id="4An-Hm-Upf">
+                                    <color key="tintColor" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </imageView>
+                                <label alignment="right" text="--" id="1Wr-sl-em5">
+                                    <color key="textColor" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" verticalAlignment="bottom" id="Rts-8L-zw6">
+                            <items>
+                                <label alignment="left" text="--" id="a8F-gJ-170">
+                                    <color key="textColor" red="1" green="0.90196078430000004" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                </label>
+                                <label alignment="right" text="--" id="lYh-6Y-M1j">
+                                    <color key="textColor" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="button" destination="egY-RV-Yqx" id="Rda-LN-PH0"/>
+                        <outlet property="distanceLabel" destination="a8F-gJ-170" id="Oyc-jq-PK4"/>
+                        <outlet property="elapsedTimer" destination="mTh-Kx-aGZ" id="iCg-es-qDz"/>
+                        <outlet property="energyLabel" destination="lYh-6Y-M1j" id="gxN-mE-B98"/>
+                        <outlet property="heartImage" destination="4An-Hm-Upf" id="5WJ-5J-0lK"/>
+                        <outlet property="heartRateLabel" destination="1Wr-sl-em5" id="Iob-c8-zDx"/>
+                        <outlet property="levelHeightGroup" destination="azg-d2-Ucd" id="OKP-t9-Aql"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="492" y="-23"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="rjY-Ar-IMT">
+            <objects>
+                <glanceController spacing="0.0" topTemplateType="body1Medium" id="Sv0-Ai-Zie" customClass="GlanceController" customModule="WatchApp" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="FitnessApp" id="1oy-1t-6bO"/>
+                        <label alignment="left" id="gaK-Iy-EnU"/>
+                        <group alignment="left" layout="vertical" id="eew-Gs-W6Y">
+                            <items>
+                                <group width="1" alignment="left" id="wsv-5k-VUp">
+                                    <items>
+                                        <imageView width="16" height="16" alignment="left" image="Path" id="gHy-6G-WJQ">
+                                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </imageView>
+                                        <label alignment="left" verticalAlignment="center" text="N/D" id="wF2-6t-jq3">
+                                            <color key="textColor" red="1" green="0.90196078430000004" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="JJq-Uv-TNr">
+                                    <items>
+                                        <imageView width="16" height="16" alignment="left" image="Flame" id="2xf-fY-fX6">
+                                            <color key="tintColor" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        </imageView>
+                                        <label alignment="left" verticalAlignment="center" text="N/D" id="4tX-Ol-P5J">
+                                            <color key="textColor" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                    <connections>
+                        <outlet property="dailyDistanceLabel" destination="wF2-6t-jq3" id="yRm-IQ-D8g"/>
+                        <outlet property="dailyEnergyLabel" destination="4tX-Ol-P5J" id="FXL-ID-AWz"/>
+                    </connections>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="164" y="-23"/>
+        </scene>
+        <!--Workout History Interface Controller-->
+        <scene sceneID="LM0-m5-pvH">
+            <objects>
+                <controller hidesWhenLoading="NO" id="dQI-DD-nec" customClass="WorkoutHistoryInterfaceController" customModule="WatchApp_Extension">
+                    <items>
+                        <table alignment="left" id="tff-Ap-S2D">
+                            <items>
+                                <tableRow identifier="WorkoutRow" id="Y1w-04-nD3" customClass="WorkoutRowController" customModule="WatchApp_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="2xI-u4-Lgt">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="AYf-8S-BB4">
+                                                <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                            </label>
+                                            <label alignment="right" verticalAlignment="center" text="Label" id="aXI-wd-qCU">
+                                                <color key="textColor" red="1" green="0.90196078430000004" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                        </items>
+                                        <connections>
+                                            <segue destination="2L6-Tw-BBX" kind="push" id="aQj-Xw-hSC"/>
+                                        </connections>
+                                    </group>
+                                    <connections>
+                                        <outlet property="dateLabel" destination="AYf-8S-BB4" id="qPK-9D-pkj"/>
+                                        <outlet property="distanceLabel" destination="aXI-wd-qCU" id="OFp-Mw-14S"/>
+                                    </connections>
+                                </tableRow>
+                                <tableRow identifier="EmptyRow" selectable="NO" id="iDD-u3-iqs">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="hGK-Ih-lVE">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Nessun allenamento precedente presente in memoria." numberOfLines="0" id="yVb-s9-AR4">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </group>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="tff-Ap-S2D" id="UHm-Ab-TUi"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="492" y="256"/>
+        </scene>
+        <!--WorkoutDetail-->
+        <scene sceneID="CFJ-s3-VNz">
+            <objects>
+                <controller identifier="WorkoutDetail" hidesWhenLoading="NO" id="2L6-Tw-BBX" customClass="WorkoutDetailInterfaceController" customModule="WatchApp_Extension">
+                    <items>
+                        <label alignment="left" text="Label" id="Rxn-D9-3hi">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <label alignment="left" text="Label" id="aPq-zy-ttm">
+                            <color key="textColor" red="1" green="0.90196078430000004" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <label alignment="left" text="Label" id="5i9-Cj-Pg7">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <label alignment="left" text="Label" id="o8u-dL-QD3">
+                            <color key="textColor" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="dateLabel" destination="Rxn-D9-3hi" id="1yp-hj-jJ9"/>
+                        <outlet property="distanceLabel" destination="aPq-zy-ttm" id="sPz-GI-MNO"/>
+                        <outlet property="durationLabel" destination="5i9-Cj-Pg7" id="Jyf-Cb-eB7"/>
+                        <outlet property="energyLabel" destination="o8u-dL-QD3" id="fVy-SW-cmN"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="766" y="256"/>
+        </scene>
+    </scenes>
+</document>
