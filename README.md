@@ -4,6 +4,8 @@ Apple Watch è il dispositivo più personale mai realizzato da Apple. Questo oro
 
 In questo progetto sono raccolti i codici sorgenti illustrati nel [testo](http://www.apogeonline.com/libri/9788850333660/scheda).
 
+Il codice è stato testato per la corretta ricompilazione con Xcode 7.2 (7C68).
+
 ## Contenuti
 Qui di seguito l'elenco dei progetti d'esempio suddivisi per capitolo.
 
@@ -19,7 +21,7 @@ Implementazione del classico programma d'esempio per Apple Watch.
 #### UICatalog
 Applicazione catalogo che l'illustra l'uso di tutti i componenti visuali messi a disposizione da WatchKit.
 
-![UICatalog](https://raw.githubusercontent.com/mbigatti/SAPAW/master/cap02/UICatalog/WatchApp/Assets.xcassets/AppIcon.appiconset/88x88.png?token=ABhgegsm_VCBJjRcwnAjLbJj7UZ-nQvVks5Wph8_wA%3D%3D)
+![UICatalog](http://cl.ly/1q2c3L1L2t3Y/UICatalog.png)
 
 #### HierarchyNavigationExample
 Esempio di navigazione gerarchica.
@@ -27,12 +29,12 @@ Esempio di navigazione gerarchica.
 #### PageNavigationExample
 Esempio di navigazione a pagine.
 
-![PageNavigationExample](https://raw.githubusercontent.com/mbigatti/SAPAW/master/cap02/PageNavigationExample/WatchApp/Assets.xcassets/AppIcon.appiconset/88x88.png?token=ABhgeo0kmhvuJAFKsrwsY17hYMKM5P4xks5WpiJ5wA%3D%3D)
+![PageNavigationExample](http://cl.ly/2f3u0H1h2r1U/PageNavigationExample.png)
 
 #### AnimationExample
 Applicazione catalogo che illustra diverse tecniche di animazione possibili su Apple Watch.
 
-![image](https://raw.githubusercontent.com/mbigatti/SAPAW/master/cap02/AnimationExample/AnimationExample/Assets.xcassets/AppIcon.appiconset/Icon-Small%403x.png?token=ABhgegzDG5YLHjC3du9JPPyFIcITx7zvks5WphyAwA%3D%3D)
+![image](http://cl.ly/2O0T0t1N1T2l/AnimationExample.png)
 
 ----
 
@@ -40,14 +42,14 @@ Applicazione catalogo che illustra diverse tecniche di animazione possibili su A
 #### NotesApp
 Applicazione iPhone per la gestione di un elenco di note e applicazione Apple Watch per la visualizzazione delle stesse. Illustra la comunicazione tra dispositivi (iPhone e Apple Watch), l'implementazione della continuità operativa tramite Handoff e la creazione di schermate di sguardo personalizzate.
 
-![NotesApp](https://raw.githubusercontent.com/mbigatti/SAPAW/master/cap03/NotesApp/WatchApp/Assets.xcassets/AppIcon.appiconset/88x88.png?token=ABhgeu2cu-mDyXnb-tVlyRVY4ADAjnVWks5Wph2MwA%3D%3D)
+![NotesApp](http://cl.ly/1R3W1A2r0u10/NotesApp.png)
 
 ---
 ### Capitolo 6
 #### TimerApp
 Applicazione watchOS e iOS che implementa un conto alla rovescia da 1 a 60 minuti. Mostra l'implementazione di notifiche personalizzate e la comunicazione tra dispositivi.
 
-![TimerApp](https://raw.githubusercontent.com/mbigatti/SAPAW/master/cap06/TimerApp/WatchApp/Assets.xcassets/AppIcon.appiconset/88x88.png?token=ABhgeowaV3x69du7bzREIMLjCtdVgV5Mks5Wph52wA%3D%3D)
+![TimerApp](http://cl.ly/3u2M260s283Y/TimerApp.png)
 
 ---
 ### Capitolo 7
@@ -55,7 +57,7 @@ Applicazione watchOS e iOS che implementa un conto alla rovescia da 1 a 60 minut
 #### WeatherApp
 Applicazione per la visualizzazione delle previsioni del tempo nella posizione attuale sia in un'applicazione Apple Watch sia in una complicazione.
 
-![WeatherApp](https://raw.githubusercontent.com/mbigatti/SAPAW/master/cap07/WeatherApp/WatchApp/Assets.xcassets/AppIcon.appiconset/88x88.png?token=ABhgelqkNJ8iKY6lToKIIm654-N4MULxks5WpiAGwA%3D%3D)
+![WeatherApp](http://cl.ly/3q0J443V0x3x/WeatherApp.png)
 
 #### ComplicationExample
 Semplice esempio di complicazione che mostra la progressione attuale all'interno della giornata di lavoro. Può essere considerato l'_Hello World_ delle complicazioni.
@@ -68,12 +70,12 @@ Semplice complicazione che mostra il numero di follower di un profilo GitHub (ca
 #### MoviePlaybackExample
 Mostra come utilizzare WatchKit per presentare contenuti multimediali su Apple Watch presentando un catalogo locale di filmati presenti nell'applicazione e consentendone la riproduzione.
 
-![MoviePlaybackExample](https://raw.githubusercontent.com/mbigatti/SAPAW/master/cap08/MoviePlaybackExample/WatchApp/Assets.xcassets/AppIcon.appiconset/88x88.png?token=ABhgepiUC77HfUFGEx8cGeStlZlWo3Smks5WpiQpwA%3D%3D)
+![MoviePlaybackExample](http://cl.ly/0Q1A3f2H2R0z/MoviePlaybackExample.png)
 
 #### AudioNotesApp
 Applicazione per la registrazione e riproduzione di note audio.
 
-![AudioNotesApp](https://raw.githubusercontent.com/mbigatti/SAPAW/master/cap08/AudioNotesApp/WatchApp/Assets.xcassets/AppIcon.appiconset/88x88.png?token=ABhgemD9AcFkS8XmPTVqBW-8nSTUirzpks5WpiSNwA%3D%3D)
+![AudioNotesApp](http://cl.ly/1E322z2R2y2H/AudioNotesApp.png)
 
 ---
 ### Capitolo 9

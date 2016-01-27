@@ -14,7 +14,7 @@ import WatchConnectivity
 class WeatherDataFetcher : NSObject, CLLocationManagerDelegate, WCSessionDelegate {
     static let sharedInstance = WeatherDataFetcher()
     
-    let wundergroundAPIToken = "dfa4c00c1a43c13b"
+    let wundergroundAPIToken = "INDICARE QUI LE PROPRIE API DI ACCESSO AL SERVIZIO"
     
     let locationManager = CLLocationManager()
     
