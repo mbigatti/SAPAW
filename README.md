@@ -82,41 +82,41 @@ Applicazione per la registrazione e riproduzione di note audio.
 #### CoreLocationCatalog
 Applicazione catalogo che illustra l'utilizzo delle API Core Location implementate in watchOS (sottoinsieme di quelle di iOS).
 
-![CoreLocationCatalog](https://raw.githubusercontent.com/mbigatti/SAPAW/master/cap09/CoreLocationCatalog/WatchApp/Assets.xcassets/AppIcon.appiconset/88x88.png?token=ABhgerZGBUBUTLU7s_XEroQTbwRe2n4jks5WpiT-wA%3D%3D)
+![CoreLocationCatalog](http://cl.ly/2A2r1c0S2O3J/CoreLocationCatalog.png)
 
 #### RegionMonitoringExample
 Applicazione d'esempio che mostra come utilizzare Core Location per controllare l'entrata o uscita da una regione su iPhone e gestire l'informazione su Apple Watch.
 
-![RegionMonitoringExample](https://raw.githubusercontent.com/mbigatti/SAPAW/master/cap09/RegionMonitoringExample/WatchApp/Assets.xcassets/AppIcon.appiconset/88x88.png?token=ABhgepDHqSjJJ5TtN2mdS2bIYq0bV-gtks5WpiUVwA%3D%3D)
+![RegionMonitoringExample](http://cl.ly/3O1M3K1W0M0q/RegionMonitoringExample.png)
 
 #### CoreMotionCatalog
 Applicazione catalogo che illustra l'utilizzo delle API Core Motion implementate in watchOS (sottoinsieme di quelle di iOS).
 
-![CoreMotionCatalog](https://raw.githubusercontent.com/mbigatti/SAPAW/master/cap09/CoreMotionCatalog/WatchApp/Assets.xcassets/AppIcon.appiconset/88x88.png?token=ABhgesteJN4tpVxLZAot5CNhOOhzHTnoks5WpiUwwA%3D%3D)
+![CoreMotionCatalog](http://cl.ly/060D2n2r2B2L/CoreMotionCatalog.png)
 
 ---
 ### Capitolo 10
 #### FitnessApp
 Applicazione che consente di gestire allenamenti, registrando il battito cardiaco rilevato da Apple Watch e salvando le informazioni ottenute nel database HealthKit.
 
-![FitnessApp](https://raw.githubusercontent.com/mbigatti/SAPAW/master/cap10/FitnessApp/WatchApp/Assets.xcassets/AppIcon.appiconset/88x88.png?token=ABhgejDt_2hsf0yiNa4akN2O1JDt6JqGks5WpiWTwA%3D%3D)
+![FitnessApp](http://cl.ly/1C3t2w1s1m3D/FitnessApp.png)
 
 ---
 ### Capitolo 11
 #### BirthdayReminderApp
 Applicazione che accede al database dei contatti del dispositivo e li mostra a partire dal prossimo compleanno.
 
-![BirthdayReminderApp](https://raw.githubusercontent.com/mbigatti/SAPAW/master/cap11/BirthdayReminderApp/WatchApp/Assets.xcassets/AppIcon.appiconset/88x88.png?token=ABhgegrcQIhihsu7KPKKXtSpbTMPJKdKks5WpiYXwA%3D%3D)
+![BirthdayReminderApp](http://cl.ly/0P1n0u253y06/BirthdayReminderApp.png)
 
 #### CalendarApp
 Applicazione che accede al database dei calendari e mostra gli appuntamenti del giorno.
 
-![CalendarApp](https://raw.githubusercontent.com/mbigatti/SAPAW/master/cap11/CalendarApp/WatchApp/Assets.xcassets/AppIcon.appiconset/88x88.png?token=ABhgevgNEdIdnAUCaPYrDA6qDLdMxxwAks5WpiaKwA%3D%3D)
+![CalendarApp](http://cl.ly/1o1k353Y0S3o/CalendarApp.png)
 
 #### ReminderApp
 Applicazione che accede al database dei promemoria e ne visualizza le informazioni.
 
-![ReminderApp](https://raw.githubusercontent.com/mbigatti/SAPAW/master/cap11/ReminderApp/WatchApp/Assets.xcassets/AppIcon.appiconset/88x88.png?token=ABhgerk4VIy1iujWhNnY11p9HFoIdLvNks5Wpib2wA%3D%3D)
+![ReminderApp](http://cl.ly/3d2a1x1r2j37/ReminderApp.png)
 
 ---
 ### Appendice A
